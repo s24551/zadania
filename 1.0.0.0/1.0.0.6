@@ -1,0 +1,24 @@
+#include <iostream>
+
+
+int main()
+{
+    double liczba1, liczba2;
+    std::cout<<"Podaj pierwsza liczbe: \n";
+    std::cin>>liczba1;
+    std::cout<<"Podaj druga liczbe: \n";
+    std::cin>>liczba2;
+    if(liczba1>liczba2)
+    {
+        std::cout<<liczba1<<" > "<<liczba2;
+    }
+    else if(liczba1==liczba2)
+    {
+        std::cout<<liczba1<<" = "<<liczba2;
+    }
+    else
+    {
+        std::cout<<liczba1<<" < "<<liczba2;
+    }
+    return 0;
+}
