@@ -1,0 +1,28 @@
+#include <iostream>
+
+
+int main()
+{
+    double liczba1, liczba2, liczba3;
+    std::cout<<"Podaj pierwsza liczbe: ";
+    std::cin>>liczba1;
+    std::cout<<"Podaj druga liczbe: ";
+    std::cin>>liczba2;
+    std::cout<<"Podaj trzecia liczbe: ";
+    std::cin>>liczba3;
+
+    if(liczba1>=liczba2 && liczba1>=liczba3)
+    {
+        std::cout<<liczba1;
+    }
+        else if(liczba2>=liczba1 && liczba2>=liczba3)
+    {
+        std::cout<<liczba2;
+    }
+        else if(liczba3>=liczba1 && liczba3>=liczba2)
+    {
+        std::cout<<liczba3;
+    }
+
+    return 0;
+}
