@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main()
+{
+    double liczba;
+    std::cout<<"Podaj liczbe: ";
+    std::cin>>liczba;
+    if(liczba==0)
+    {
+        std::cout<<"Podana liczba jest zerem.";
+    }
+    else if(liczba>0)
+    {
+        std::cout<<"Podana liczba jest dodatnia.";
+    }
+    else
+    {
+        std::cout<<"Podana liczba jest ujemna.";
+    }
+    return 0;
+}
