@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+    int liczba;
+    std::cout<<"Podaj liczbe: ";
+    std::cin>>liczba;
+
+    if(liczba>1 && liczba/1==liczba && liczba/liczba==1)
+    {
+        std::cout<<"Liczba "<<liczba<<" jest liczba pierwsza";
+    }
+    else
+    {
+        std::cout<<"Liczba "<<liczba<<" nie jest liczba pierwsza";
+    }
+    return 0;
+}
