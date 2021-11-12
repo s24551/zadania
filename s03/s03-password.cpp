@@ -3,7 +3,7 @@
 
 auto main(int argc, char* argv[]) -> int
 {
-std::string haslo;
+std::string haslo,a;
 a = argv[1];
     do{
     std::cout << "Podaj haslo: ";
@@ -11,8 +11,7 @@ a = argv[1];
     }while(haslo!=a);
     if(haslo==a)
 {
-    std::cout<<"OK!";
+    std::cout<<"OK!\n";
 }
     return 0;
 }
-
