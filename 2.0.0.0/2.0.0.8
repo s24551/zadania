@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdlib>
+int main()
+{
+    int liczba;
+    int silnia=1;
+    std::cout<<"Podaj liczbe, z ktorej mam wyliczyc silnie: ";
+    std::cin>>liczba;
+    for(int i=1;i<=liczba;i++){
+    silnia=silnia*i;
+    }
+    std::cout<<"Wynik to: "<<silnia;
+    return 0;
+}
