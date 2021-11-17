@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cstdlib>
+int main()
+{
+    int liczba,i;
+    int silnia=1;
+    std::cout<<"Podaj liczbe, z ktorej mam wyliczyc silnie: ";
+    std::cin>>liczba;
+    do
+    {
+    i++;
+    silnia=silnia*i;
+
+    }while(i<liczba);
+
+    std::cout<<"Wynik to: "<<silnia;
+    return 0;
+}
