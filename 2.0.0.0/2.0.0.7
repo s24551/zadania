@@ -1,0 +1,18 @@
+#include <iostream>
+int main()
+{
+    int limit,dzielnik,suma;
+    std::cout<<"Podaj limit: ";
+    std::cin>>limit;
+    std::cout<<"Podaj dzielnik: ";
+    std::cin>>dzielnik;
+    for(int i=0;i<=limit;i++)
+    {
+        if(i%dzielnik==0){
+        suma+=i;
+        }
+    }
+        std::cout<<"Suma to: "<<suma;
+
+    return 0;
+}
