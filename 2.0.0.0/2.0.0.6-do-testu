@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+auto main(int argc, char* argv[]) -> int
+{
+    ilosc=std::stoi(argc)
+    for(int m=3;ilosc   ==m;m++)
+    {
+        if(argv[2]>argv[m])
+        {
+            std::cout<<argv[1]<<">"<<argv[m]"\n";
+        }
+        else if(argv[2]<argv[m])
+        {
+            std::cout<<argv[1]<<"<"<<argv[m]"\n";
+        }
+        else if(argv[2]==argv[m])
+        {
+            std::cout<<argv[1]<<"="<<argv[m]"\n";
+        }
+    }
+    return 0;
+}
