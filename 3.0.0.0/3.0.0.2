@@ -1,0 +1,16 @@
+#include <iostream>
+int main()
+{
+    int rozm,liczba;
+    int a[1000];
+    std::cout<<"Podaj rozmiar tablicy: ";
+    std::cin>>rozm;
+    std::cout<<"Podaj liczbe od ktorej mam zaczac: ";
+    std::cin>>liczba;
+    for(int i=0;i<=rozm;i++)
+    {
+    a[i-1]=liczba-1;
+    liczba=liczba+1;
+    }
+return 0;
+}
