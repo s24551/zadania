@@ -1,0 +1,19 @@
+#include <iostream>
+int main()
+{
+    int wys,dlug;
+    std::cout<<"Podaj dlugosc prostokata: ";
+    std::cin>>wys;
+    std::cout<<"Podaj wysokosc prostokata: ";
+    std::cin>>dlug;
+
+    for(int i=0; i<dlug; i++)
+    {
+        for(int j=0;j<wys;j++)
+        {
+            std::cout<<"*";
+        }
+        std::cout<<"\n";
+    }
+return 0;
+}
