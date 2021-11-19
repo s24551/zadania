@@ -2,7 +2,7 @@
 int main()
 {
     int wys,dlug;
-    std::cout<<"Podaj wysokosc prostokata: ";
+    std::cout<<"Podaj wysokosc trojkata: ";
     std::cin>>wys;
     for(int i=wys; i>0; i--)
     {
