@@ -1,0 +1,27 @@
+#include <iostream>
+#include<algorithm>
+
+int sort_asc(int tab[], int n)
+{
+    std::sort(tab, tab+n);
+    
+}
+int main()
+{
+    int rozm,indeks;
+    int tab[]={42, 9 , -1, 18, 59, 3, 101, 31, 72, 12};
+    std::cout<<"Podaj rozmiar tablicy: ";
+    std::cin>>rozm;
+    std::cout<<"Przed sortowaniem:\n";
+	for(int i=0;i<10;i++)
+    {
+        std::cout<<tab[i]<<' ';
+    }
+    std::cout<<sort_asc(tab, rozm);
+    std::cout<<"\nPo sortowaniu:\n";
+	for(int i=0;i<10;i++)
+    {
+        std::cout<<tab[i]<<' ';
+    }
+    return 0;
+}
