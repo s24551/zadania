@@ -4,11 +4,11 @@ auto is_even(int n)
 {
     if(n%2==0)
     {
-        return 0;
+        return true;
     }
     else
     {
-        return 1;
+        return false;
     }
 }
 
@@ -17,7 +17,7 @@ int main()
     int n;
     std::cout<<"Podaj liczbe: ";
     std::cin>>n;
-    if(is_even(n)== 0)
+    if(is_even(n)== true)
     {
         std::cout<<"Liczba jest parzysta";
     }
