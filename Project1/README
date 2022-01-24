@@ -1,0 +1,1 @@
+Plik main.cpp najlepiej umieścić w folderze, ze względu na to iż jedną z jego funkcji jest tworzenie pliku tekstowego (.txt) gdzie zapisywane są dane.
