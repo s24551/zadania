@@ -8,7 +8,7 @@
 #include <cstdlib>
 int main()
 {
-    int wybor,miejsce,i,j;
+    int wybor,miejsce,i,licznik;
     int tab[10]= {};
     std::string bye = "ZAPRASZAMY PONOWNIE!";
     srand(time(NULL));
@@ -20,7 +20,7 @@ int main()
     std::cout<<"\n\t   Witamy w Systemie Rezerwacji Biletow Linii Lotniczych!\n\n";
 
 
-    for(j=0; j<10; j++) // petla pod max
+    for(licznik=0; licznik<10; licznik++) // petla pod max
     {
         std::cout<<"\t#############################################################\n";
         std::cout<<"###\tWYBIERZ 1 ABY DOKONAC REZERWACJI DLA LINII LOTNICZYCH RYANAIR\t###\n";
@@ -41,10 +41,10 @@ int main()
             {
                 std::cout<<"Wybierz miejsce:\n\n";
                 std::cin>>miejsce;
-                tab[j]=miejsce;
-                for (i=0; i<j; i++)
+                tab[licznik]=miejsce;
+                for (i=0; i<licznik; i++)
                 {
-                    if(tab[j]==tab[i])
+                    if(tab[licznik]==tab[i])
                     {
                         system( "cls" );
                         SetConsoleTextAttribute(hConsole, 12);
@@ -54,14 +54,14 @@ int main()
                     }
                 }
             }
-            while (i!=j);
-            if(tab[j] <=5 && tab[j]>=1) //warunek wolnych miejsc
+            while (i!=licznik);
+            if(tab[licznik] <=5 && tab[licznik]>=1) //warunek wolnych miejsc
             {
                 system( "cls" );
                 std::cout<<"\n";
                 std::cout<<"################################\n";
                 std::cout<<"Linia lotnicza: RYANAIR\n";
-                std::cout<<"Numer miejsca: "<<tab[j]<<"\n";
+                std::cout<<"Numer miejsca: "<<tab[licznik]<<"\n";
                 std::cout<<"################################\n\n";
                 zapis.open("bilety.txt", std::ios_base::app);
                 zapis<<"##############################\n";
@@ -85,11 +85,11 @@ int main()
             {
                 std::cout<<"Wybierz miesjce:\n\n";
                 std::cin>>miejsce;
-                tab[j]=miejsce;
+                tab[licznik]=miejsce;
 
-                for (i=0; i<j; i++)
+                for (i=0; i<licznik; i++)
                 {
-                    if(tab[j]==tab[i])
+                    if(tab[licznik]==tab[i])
                     {
                         SetConsoleTextAttribute(hConsole, 12);
                         std::cout<<"\nTo miejsce jest juz niedostepne!\n\n";
@@ -98,14 +98,14 @@ int main()
                     }
                 }
             }
-            while (i!=j);
-            if(tab[j] >=6 && tab[j]<=10) //warunek  wolnych miejsc
+            while (i!=licznik);
+            if(tab[licznik] >=6 && tab[licznik]<=10) //warunek  wolnych miejsc
             {
                 system( "cls" );
                 std::cout<<"\n";
                 std::cout<<"################################\n";
                 std::cout<<"Linia lotnicza: WIZZAIR\n";
-                std::cout<<"Numer miejsca: "<<tab[j]<<"\n";
+                std::cout<<"Numer miejsca: "<<tab[licznik]<<"\n";
                 std::cout<<"################################\n\n";
                 zapis.open("bilety.txt", std::ios_base::app);
                 zapis<<"##############################\n";
