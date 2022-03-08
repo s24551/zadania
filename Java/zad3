@@ -1,0 +1,15 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Miles\tKilometers");
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i + "\t\t" + i*(1.609));
+        }
+    }
+}
