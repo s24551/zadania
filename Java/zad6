@@ -1,0 +1,34 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        int []tab = new int[size];
+        int firstInt = scanner.nextInt();
+        tab[0] = firstInt;
+        for (int i = 2; i < size; i++) {
+            if (i % 2 == 0) {
+                tab[i] = i;
+            }
+            else {
+                tab[i] = i+1;
+            }
+        }
+
+
+
+        for (int i=0; i<size; i++)
+        {
+            System.out.print(tab[i]);
+        }
+    }
+
+    }
+
+
+
