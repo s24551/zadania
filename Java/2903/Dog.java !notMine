@@ -1,0 +1,25 @@
+package com.company;
+
+public class Dog {
+     private int age;
+    // private - tylko wewnatrz klasy
+    //public - dostepny  wszedzie
+    //protected - tylko wewnatrz klasy, lub w klasach dziedziczących
+    // [default] - dostepne wewnatrz pakietu
+
+    public Dog(){
+        age = 1;
+    }
+
+    public int getAge(){        //getter
+        return age;
+    }
+
+    public void starzejSie() {
+        age++;
+    }
+
+    public void setAge(int age){  //setter
+        this.age = age;
+    }
+}
