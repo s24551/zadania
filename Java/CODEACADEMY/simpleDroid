@@ -1,0 +1,33 @@
+public class Droid {
+int batteryLevel = 100;             //pole
+String name;
+
+public Droid(String droidName){         //konstruktor
+  name = droidName;
+
+}
+
+public void performTask(String task){         //metoda
+System.out.println(name + " is performing task: " + task);
+batteryLevel = batteryLevel - 10;
+System.out.println("New battery level is: " + batteryLevel);
+}
+
+public String toString(){           //toString
+return "Hello, Im the droid: " + name;
+
+}
+
+public static void main(String[] args){
+Droid Codey = new Droid("Codey");
+System.out.println(Codey);
+Codey.performTask("dancing");
+Codey.performTask("dancing");
+Codey.performTask("dancing");
+Codey.performTask("dancing");
+
+
+}
+
+
+}
